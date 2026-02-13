@@ -19,13 +19,6 @@ public class PalindromeCheckerApp {
         scanner.close();
     }
 
-    /**
-     * Checks if the given string is a palindrome.
-     * Ignores case and non-alphanumeric characters.
-     * 
-     * @param str The string to check.
-     * @return true if the string is a palindrome, false otherwise.
-     */
     public static boolean isPalindrome(String str) {
         if (str == null) {
             return false;
