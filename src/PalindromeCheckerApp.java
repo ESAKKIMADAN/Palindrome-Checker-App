@@ -3,18 +3,22 @@ import java.util.Scanner;
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
-
-        String word = "madam";
+        String input = "radar";
+        char[] chars = input.toCharArray();
+        int start = 0;
+        int end = chars.length - 1;
         boolean isPalindrome = true;
-        for (int i = 0; i < word.length() / 2; i++) {
-            if (word.charAt(i) != word.charAt(word.length() - 1 - i)) {
+        while (start < end) {
+            if (chars[start] != chars[end]) {
                 isPalindrome = false;
                 break;
             }
+            start++;
+            end--;
         }
         if (isPalindrome)
-            System.out.println("Is it Palindrome?: True");
+            System.out.println("Palindrome");
         else
-            System.out.println("Is it Palindrome?: False");
+            System.out.println("Not Palindrome");
     }
 }
