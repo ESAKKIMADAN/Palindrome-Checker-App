@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Stack;
 
 public class PalindromeCheckerApp {
 
@@ -16,8 +17,8 @@ public class PalindromeCheckerApp {
             }
         }
         if (isPalindrome)
-            System.out.println("Palindrome");
+            System.out.println(input + " is Palindrome");
         else
-            System.out.println("Not Palindrome");
+            System.out.println(input + " is Not Palindrome");
     }
 }
